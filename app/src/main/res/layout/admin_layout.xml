@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGestMaestri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONE MAESTRI" />
+
+        <Button
+            android:id="@+id/btnGestione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONE CIRCOLO" />
+
+        <Button
+            android:id="@+id/gestCampi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONE CAMPI" />
+
+        <Button
+            android:id="@+id/gestBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIONE BAN" />
+
+        <Button
+            android:id="@+id/richBAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEGNALAZIONI" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

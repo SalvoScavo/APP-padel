@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Padel"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.GestioneMaestriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.BookingLessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MaestriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GestioneCampiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GestioneBannati"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RichiesteBanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GestioneCircoloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InvitiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SquadreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OtherInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LogActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".Services.BackgroundService"/>
+    </application>
+
+</manifest>

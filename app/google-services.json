@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "188953049883",
+    "firebase_url": "https://padel-cbe39-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "padel-cbe39",
+    "storage_bucket": "padel-cbe39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188953049883:android:7b697ac1cd4b46a557b1be",
+        "android_client_info": {
+          "package_name": "com.example.padel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh3Tu1yPB6q-E92yMwiNNkx5gAbWkfQlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

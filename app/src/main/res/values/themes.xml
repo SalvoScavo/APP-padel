@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="Base.Theme.Padel" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimary2</item>
+    </style>
+
+    <style name="Theme.Padel" parent="Base.Theme.Padel" />
+
+    <style name="SCREEN">
+        <item name="android:background" >#FFF</item>
+
+    </style>
+    <style name="TEXT">
+
+        <item name="android:textColor">#000</item>
+    </style>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    style="@style/SCREEN"
+    tools:context=".Fragment.AccountFragment">
+
+
+    <ScrollView
+        style="@style/SCREEN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SCREEN"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" GESTIONE  PROFILO "
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fotocampoG"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:minHeight="100dp"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/nome_cognomeTXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NOME COGNOME"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/ranking_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ranking:" />
+
+            <TextView
+                android:id="@+id/rep_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reputazione:" />
+
+            <View
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/modPic_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Modifica foto profilo" />
+
+                <ImageButton
+                    android:id="@+id/btnSavePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tick"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modifica la tua bio:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/modBio_txt"
+                    android:layout_width="301dp"
+                    android:layout_height="75dp"
+                    android:enabled="false"
+                    android:text="modifica biografia" />
+
+                <ImageView
+                    android:id="@+id/modfybtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/pencil"
+
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ok"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:src="@drawable/tick"
+                />
+            <TextView
+                android:id="@+id/admin_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impostazioni amministratore"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnLogut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT" />
+
+            <ProgressBar
+                android:id="@+id/pb_img"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
